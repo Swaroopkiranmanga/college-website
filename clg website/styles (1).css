@@ -1,0 +1,296 @@
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+header {
+    background: linear-gradient(to right, #007bff, #00c1ff); /* Blue gradient background */
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    font-size: 28px;
+}
+.navbar {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+
+.menu-icon {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 18px;
+    position: relative;
+    z-index: 1;
+    margin-left: auto;
+}
+.menu-icon:hover .bar {
+    background-color: #007bff; /* Change color on hover */
+}
+
+.bar {
+    width: 30px;
+    height: 3px;
+    background-color: #fff;
+    transition: 0.3s;
+}
+
+.nav-links {
+    position: absolute;
+    top: 100%;
+    left: 50%; /* Center the menu below the icon */
+    transform: translateX(-50%); /* Adjust for centering */
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: none;
+    z-index: 2; /* Ensure the menu is above other content */
+}
+.nav-links.show {
+    display: block;
+    animation: fadeInFromTop 0.5s ease;
+}
+
+.nav-links ul {
+    list-style: none;
+    padding: 20px;
+    margin: 0;
+}
+
+.nav-links li {
+    margin-bottom: 15px;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #007bff;
+}
+main {
+    padding: 20px;
+}
+
+h2 {
+    color: #007bff; /* Blue heading color */
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+p {
+    line-height: 1.6;
+}
+footer {
+    background: #222; /* Dark background for footer */
+    color: #f0f0f0;
+    text-align: center;
+    padding: 10px; /* Adjust padding as needed */
+}
+.contact-info {
+    display: flex;
+    flex-direction: column; /* Align items in a column */
+    align-items: center;
+    margin-top: 20px;
+}
+
+.contact-item {
+    margin: 10px 0; /* Add vertical spacing between items */
+    display: flex;
+    align-items: center;
+}
+
+.contact-icon img {
+    width: 30px;
+    height: auto;
+    transition: transform 0.3s ease-in-out;
+    margin-right: 10px; /* Add spacing between icon and text */
+}
+
+.contact-icon:hover img {
+    transform: scale(1.1);
+}
+/* Animations */
+section {
+    animation: fadeInUp 1s ease;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* New Styles */
+#about {
+    background-color: #f9f9f9; /* Light gray background for About section */
+    padding: 30px;
+}
+
+#departments {
+    background-color: #f0f0f0; /* Slightly darker gray background for Department section */
+    padding: 30px;
+}
+.project-gallery {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 0px;
+    background-color: #e6e6e6; /* Even darker gray background for Projects section */
+    padding: 30px;
+}
+.project-gallery img {
+    width: calc(20% - 10px); /* Adjust the width and spacing as needed */
+    max-width: 50%;
+    margin-bottom: 0px;
+}
+#features {
+    background-color: #f9f9f9; /* Light gray background */
+    padding: 30px; /* Add padding */
+}
+
+#learning {
+    background-color: #f0f0f0; /* Slightly darker gray background */
+    padding: 30px; /* Add padding */
+}
+#socials {
+    background-color: #d9d9d9; /* Lightest gray background for Socials section */
+    padding: 30px;
+}
+
+/* College Image as Background */
+body {
+    background-image: url('https://idealtech.edu.in/slides/home_page/01.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+}
+/* Additional CSS file for blue color palette */
+body {
+    color: #333; /* Dark text color for better readability */
+}
+
+a {
+    color: #007bff; /* Blue link color */
+}
+
+a:hover {
+    color: #0056b3; /* Darker blue link color on hover */
+}
+
+main section {
+    border-bottom: 2px solid #007bff; /* Blue border for each section */
+@keyframes fadeInFromTop {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+}
+.ece-department {
+    font-family: 'Oswald', Arial, sans-serif;/* Use the futuristic font */
+    font-size: 30px;
+    color: #007bff; /* Blue color for text */
+    letter-spacing: 1px; /* Adjust letter spacing for a futuristic look */
+    text-align: center; /* Center the text */
+    flex-grow: 1; /* Occupy available space in the center */
+}
+.tagline {
+    font-size: 20px;
+    color: #fff; /* Blue color for the tagline */
+    display: block; /* Display as a block element */
+    margin-top: -3px; /* Adjust the margin to move the tagline upwards */
+}
+h3 {
+    background: linear-gradient(to right, #007bff, #00c1ff); /* Blue gradient background */
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    font-size: 28px;
+}
+.logo{
+    width:70px;
+    height:80px; 
+    margin-top:-40px;
+    vertical-align: center;
+    }
+@media (max-width: 700px) {
+    header h1 {
+        font-size: 24px; /* Decrease font size for smaller screens */
+
+    }
+    
+    .navbar {
+        flex-direction: column; /* Stack the elements vertically on smaller screens */
+        align-items: flex-start; /* Align items to the left on smaller screens */
+        padding: 10px; /* Reduce padding for smaller screens */
+    }
+
+    .menu-icon {
+        height:auto;
+        margin-left: 0; /* Reset margin for menu icon on smaller screens */
+        margin-top: 10px; /* Add margin to create space between logo and icon */
+    }
+
+    .nav-links {
+        position: static; /* Remove absolute positioning on smaller screens */
+        transform: none; /* Reset transform property on smaller screens */
+        background-color: transparent; /* Remove background color */
+        display: flex; /* Display the menu items in a row on smaller screens */
+        justify-content: space-around; /* Distribute items evenly on smaller screens */
+        width: 100%; /* Full width for the menu on smaller screens */
+    }
+
+    .nav-links ul {
+        padding: 0; /* Remove padding for the menu items */
+        display: flex; /* Display the menu items in a row on smaller screens */
+        flex-direction: column; /* Stack the items vertically on smaller screens */
+        align-items: center; /* Center align the menu items on smaller screens */
+    }
+
+    .nav-links li {
+        margin-bottom: 10px; /* Reduce margin for smaller screens */
+    }
+    
+    .contact-info {
+        flex-direction: column; /* Stack contact items vertically */
+        align-items: center; /* Center align items */
+    }
+    
+    .contact-item {
+        margin: 5px 0; /* Reduce margin for contact items */
+    }
+
+    .contact-icon img {
+        width: 25px; /* Reduce icon size for smaller screens */
+        margin-right: 5px; /* Reduce margin between icon and text */
+    }
+    .ece-department {
+        font-size: 10px; 
+    }
+    .logo {
+        width: 50px; /* Adjust the width as needed for smaller screens */
+        height: auto; /* This will maintain the aspect ratio */
+        margin-top: 0; /* Reset the margin-top property */
+        vertical-align: middle; /* You may or may not need this, depending on your layout */
+    }
+}
